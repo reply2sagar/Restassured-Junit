@@ -1,7 +1,0 @@
-{
-  "server": "https://jsonplaceholder.typicode.com",
-
-  "post-api" : "/posts"
-
-
-}

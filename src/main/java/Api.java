@@ -1,9 +1,13 @@
 import io.restassured.RestAssured;
+import utilities.ConfigManager;
 
 public class Api {
 
     Api(){
-        RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
+        RestAssured.baseURI = ConfigManager.prop.getProperty("server");
+       // RestAssured.baseURI = ConfigManager.getInstance().getProperties().getProperty("server");
+
+
     }
 
 }
